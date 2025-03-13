@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        /* Media Queries */
+        @media (min-width: 600px) { /* Tablet */
+            .container {
+                grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+            }
+        }
+
+        @media (min-width: 992px) { /* Desktop */
+            .container {
+                grid-template-columns: 1fr 1fr 1fr; /* Three columns on desktops */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="item">
+            <h2>Item 1</h2>
+            <p>This is the content of item 1.</p>
+        </div>
+        <div class="item">
+            <h2>Item 2</h2>
+            <p>This is the content of item 2.</p>
+        </div>
+        <div class="item">
+            <h2>Item 3</h2>
+            <p>This is the content of item 3.</p>
+        </div>
+        <div class="item">
+            <h2>Item 4</h2>
+            <p>This is the content of item 4.</p>
+        </div>
+        <div class="item">
+            <h2>Item 5</h2>
+            <p>This is the content of item 5.</p>
+        </div>
+        <div class="item">
+            <h2>Item 6</h2>
+            <p>This is the content of item 6.</p>
+        </div>
+    </div>
+
+</body>
+</html>
